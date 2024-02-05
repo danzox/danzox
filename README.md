@@ -1,1 +1,3 @@
-Manifest file for android building purpose
+name : ramdani
+from : id
+age  : 18
