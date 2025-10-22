@@ -1,0 +1,9 @@
+name: build
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: buildjet-32vcpu-ubuntu-2204
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
