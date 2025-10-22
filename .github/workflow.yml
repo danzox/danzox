@@ -1,9 +1,9 @@
-name: Test Suite
-on: push
+name: build
+on:
+  workflow_dispatch:
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    runs-on: buildjet-4vcpu-ubuntu-2204
-    name: Test
+  build:
+    runs-on: buildjet-32vcpu-ubuntu-2204
     steps:
-      - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v4
