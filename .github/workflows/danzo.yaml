@@ -1,4 +1,4 @@
-jobs: Build
+jobs:
   test:
     strategy:
       fail-fast: true # In case one of the jobs fails, the other jobs will be cancelled
